@@ -285,3 +285,34 @@ body{
     background: rgb(210, 213, 210);
     color: black;
 }
+
+
+/* previous semesters */
+.fallBox {
+    cursor: pointer;
+}
+.fallBox h4 {
+    color: rgb(109, 105, 105);
+}
+.fallBox h4:hover{
+    color: black;
+}
+.fallBox p{
+    position: relative;
+    left: 30px;
+}
+.fallBox >div{
+    color: rgb(109, 105, 105);
+    background: rgb(243, 243, 243);
+}
+.fallBox >div:hover{
+    background: rgb(210, 213, 210);
+    color: black;
+}
+.fallBox >div ul li a{
+    color: rgb(109, 105, 105);
+}
+.fallBox >div ul li a:hover{
+    background: rgb(210, 213, 210);
+    color: black;
+}

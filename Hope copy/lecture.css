@@ -1,0 +1,109 @@
+#lecture-container{
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#lecture-container h2{
+    position: absolute;
+    left: 205px;
+}
+#lecture-container #parent-lectureDivs{
+    width: 75%;
+    background: var(--secondary-color);
+}
+#parent-lectureDivs{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    margin-top: 50px;
+}
+.lectureDivs{
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+    display: block;
+    width: 160px;
+    font-size: 0.9rem;
+    height: 40px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    color: rgb(205, 203, 203);
+    box-shadow: 0 4px 8px 0 rgba(237, 233, 233, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    cursor: pointer;
+}
+.lectureDivs i{
+    color: rgb(153, 141, 141);
+    top: -30px;
+    position: relative;
+    right: -130px;
+}
+.lectureDivs:hover i{
+    color: rgb(255, 255, 255);
+}
+.lectureDivs:hover{
+    background: black;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(255, 255, 255, 0.475);
+}
+.lectureLink{
+    width: 70%;
+    border: 0.1px solid rgba(255, 255, 255, 0.492);
+    margin: 10px;
+}
+.lectureLink ul li{
+    list-style: none;
+    padding: 10px;
+}
+.lectureLink ul li a{
+    color: rgb(0, 110, 255);
+    list-style: none;
+    text-decoration: none;
+}
+.lectureLink2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    width: 70%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+.lectureLink2 div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--primary-color);
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    height: 100px;
+    text-align: center;
+    width: 220px;
+    margin: 20px;
+}
+.lectureLink2 div a{
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+}
+input{
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 2rem;
+    margin: 20px 20px;
+    width: 70%;
+    border:  1px solid rgba(255, 255, 255, 0.471);
+    color: white;
+    padding-left: 10px;
+}
+.lectureLink2 a i{
+    color: grey;
+    position: absolute;
+    top: 494px;
+    left: 79%;
+    z-index: 1;
+}
+.lectureLink2 a i:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
