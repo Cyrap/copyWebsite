@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+body{
+    background: linear-gradient(rgb(74, 81, 190),rgb(53, 53, 185));
+}
+#login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    top: -90px;
+}
+#login-container #login-form{
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    width: 1000px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#login-container #login-form #pic-container img{
+    height: 300px;
+}
+#login-container #login-form #a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+label{
+    margin: 55px 0px 20px;
+    font-size: 1.3rem;
+}
+input{
+    width: 380px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin: 8px;
+    border-width: 1px;
+    border-color: grey;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    width: 380px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(225, 3, 3);
+    color: white;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+a:hover{
+    box-shadow: 0px 10px 5px rgb(93, 0, 255);
+    transition: 0.5s;
+}
+
+@keyframes example {
+    from {background-color: rgb(223, 40, 40);
+        color: rgb(255, 255, 255);
+        
+    }
+    to {background-color: rgb(229, 32, 32);
+        color: rgb(255, 0, 51);
+    }
+  }
+
+
+@media (max-width:1000px){
+#login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#login-container #login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 335px;
+    width: 510px;
+    background: rgb(255, 255, 255);
+
+}
+
+label{
+    margin: 55px 0px 20px;
+    font-size: 1.3rem;
+}
+input{
+    width: 380px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin: 8px;
+    border-width: 1px;
+    border-color: grey;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    width: 380px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(225, 3, 3);
+    color: white;
+}
+#login-container #pic-container{
+    display: none;
+}
+#ex {
+    box-shadow: 0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 50px 0 70px 65px;
+position: relative;
+animation-name: ex;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+@keyframes ex {
+    0%   {
+        left:-80px; top:-235px
+        ;}
+          25%  {
+        left:-80px; top:235px
+        ;}
+          50%  {
+        left:610px; top:235px
+        ;}
+          75%  {
+        left:610px; top:-235px
+        ;}
+          100% {
+        left:-80px; top:-235px
+        ;}
+}
+}

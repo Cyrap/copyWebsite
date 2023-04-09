@@ -1,0 +1,287 @@
+:root{
+    --primary-color:rgb(49, 44, 44);
+    --secondary-color:rgb(55, 50, 50);
+    --text-color: white;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: var(--secondary-color);
+}
+.dark-bg{
+    background-color: var(--primary-color);
+}
+
+#nav-container{
+    height: 80px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(237, 233, 233, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+#nav-container button{
+    background: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+#nav-container #logo-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    align-items: center;
+    margin-left: 25px;
+}
+#nav-container #logo-container >div img{
+    height: 60px;
+    width: 60px;
+}
+#nav-container #logo-container h1{
+    height: 50px;
+}
+#nav-container #logo-container h1 img{
+    height: 40px;
+}
+#nav-container #logo-container h1:hover{
+    cursor: pointer;
+}
+#nav-container #msg-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+#nav-container #msg-container #msg{
+    width: 1px;
+    height: 40px;
+    background: var(--text-color);
+    margin: 0 25px;
+    border: none;
+    border-radius: 5px;
+}
+#nav-container #msg-container button{
+    color: var(--text-color);
+}
+/* notification button style */
+.icon-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.icon-button:hover{
+    cursor: pointer;
+}
+.icon-button__badge{
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    background: rgb(131, 10, 113);
+    padding: 0px 3px 2px 3px; 
+    font-size: 0.7rem;
+    border-radius: 3px;
+}
+/* tsesnii towch */
+#nav-container #menu-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: none;
+}
+
+#nav-container #menu-button div{
+    position: relative;
+    flex: none;
+    width: 40%;
+    height: 3px;
+    background-color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+#nav-container #menu-button div::after,
+#nav-container #menu-button div::before
+{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: 0px;
+    width: 100%;
+    height: inherit;
+    background: inherit;
+    border-radius: 10px;
+}
+#nav-container #menu-button div::before{
+    top: 7px;
+}
+#nav-container #menu-button:hover{
+    /* box-shadow: 7px -7px 7px rgb(49, 15, 241); */
+    box-shadow: -3px -8px 5px blue, -3px 8px 5px rgb(255, 123, 0), 8px 3px 5px rgb(255, 0, 0);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.login-pic {
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.login-pic button{
+    padding-right: 15px;
+    
+}
+.login-pic img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* showcase style */
+#showcase-container{
+    padding: 10px 160px;
+    background: var(--secondary-color);
+    height: 130vh;
+}
+#showcase-container h2{
+    font-size: 1.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+}
+
+#showcase-container2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+/* hicheelvvdin div-in style */
+.divs{
+    border: none;
+    margin: 17px;
+    width: 500px;
+    padding: 26px 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: rgb(205, 203, 203);
+    box-shadow: 0 4px 8px 0 rgba(237, 233, 233, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.divs:hover{
+    background-color: rgb(29, 28, 28);
+    color: var(--text-color);
+    cursor: pointer;
+    box-shadow:0px 0px 5px rgb(255, 255, 255), -3px 8px 5px rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+.divs a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(205, 203, 203);
+    font-size: 1.1rem;
+}
+.divs a >div{
+    background-color: rgb(23, 70, 165);
+    margin: 3px;
+    border-radius: 5px;
+    padding: 1px 5px;
+}
+@media (max-width:1000px){
+    #showcase-container{
+        height: 220vh;
+    }
+    #showcase-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #showcase-container h2{
+        position: relative;
+        left: -50px;
+    }
+    .login-pic button{
+        display: none;
+    }
+}
+
+/* side bar style */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color:  #818181;
+  }
+  .sidenav h3,
+  .sidenav h4
+  {
+    position: relative;
+    left: 30px;
+    color: #f1f1f1;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .line{
+    background-color: #818181;
+    height: 0.1px;
+    opacity: 0.4;
+    border: none;
+    width: 90%;
+    margin: 17px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* course elssen */
+.courses >div{
+    background: rgb(243, 243, 243);
+}
+.courses >div ul li a{
+    color: rgb(109, 105, 105);
+}
+.courses >div ul li a:hover{
+    background: rgb(210, 213, 210);
+    color: black;
+}
