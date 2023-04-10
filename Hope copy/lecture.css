@@ -23,7 +23,7 @@
     align-items: center;
     background: var(--primary-color);
     display: block;
-    width: 160px;
+    width: 65%;
     font-size: 0.9rem;
     height: 40px;
     padding: 30px;
@@ -37,7 +37,7 @@
     color: rgb(153, 141, 141);
     top: -30px;
     position: relative;
-    right: -130px;
+    right: -80%;
 }
 .lectureDivs:hover i{
     color: rgb(255, 255, 255);
@@ -117,4 +117,56 @@ cursor: pointer;
     border:  1px solid rgba(255, 255, 255, 0.471);
     color: white;
     padding-left: 10px;
+}
+
+@media (max-width: 1300px){
+    #lecture-container #parent-lectureDivs{
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .lectureDivs{
+        width: 500px;
+    }
+    .lectureDivs i{
+        position: relative;
+        right: -450px;
+    }
+    #lecture-container h2{
+        position: relative;
+        left: -30px;
+    }
+    
+}
+@media (max-width: 600px){
+    #lecture-container #parent-lectureDivs{
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .lectureDivs{
+        width: 300px;
+    }
+    .lectureDivs i{
+        position: relative;
+        right: -280px;
+    }
+    #lecture-container h2{
+        position: absolute;
+        left: 70px;
+    }
+    .lectureLink2{
+      display: flex;
+      flex-direction: column;
+    }
+}
+@media (max-width: 740px){
+    .lectureLink2{
+        display: flex;
+        flex-direction: column;
+      }
 }
