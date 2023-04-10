@@ -37,8 +37,6 @@ if (down) {
 }
 
 
-
-
 var a  = document.getElementById('fall');
 var doosh = false;
 function fallDown(){
