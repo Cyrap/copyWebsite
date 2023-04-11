@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/8a206a71da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="shortcut icon" type="image/x=icon" href="favico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <script src="https://kit.fontawesome.com/cf0f47196c.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/cf0f47196c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/img/un.png">
     <link rel="stylesheet" href="message-btn-style.css">
-    <link rel="stylesheet" href="lecture.css">
+	<link rel="stylesheet" href="lecture.css">
     <title>HOPE</title>
 </head>
 <body>
@@ -22,8 +22,8 @@
                     <button id="menu-button"  style="font-size:0px;cursor:pointer" onclick="openNav()">&#9776;>
                         <div></div>
                     </button>
-                    <div onclick="location.href='index.html'"><img src="/img/Untitled-1.png" alt=""></div>
-                    <h1><img src="/img/h2.png" alt="hope"></h1>
+                    <div><img src="/img/Untitled-1.png" alt="" onclick="location.href='index.html'"></div>
+                    <h1 onclick="location.href='index.html'"><img src="/img/h2.png" alt="hope"></h1>
                 </div>
             <div id="msg-container" onclick="toggleNotifi()">
                 <button type="button" class="icon-button">
@@ -103,6 +103,7 @@
         <a href="#">Previous Semesters</a>
         <div class="line"></div>
         <a href="#" onclick="fallDown()">2023 Fall</a>
+
         <div class="fallBox" id="fall">
 			<div class="fallBox">
 				<div class="text">
@@ -169,54 +170,55 @@
 
       </div>
       
-    <section id="showcase-container">
-        <h2>2023 Spring</h2>
-        <div id="showcase-container2">
-            <div class="divs" onclick="location.href='IntroductionToCS.html'">
-                <a href="">Introduction to CS <div>03-16</div><div>03-28</div></a>
-                <p>(CS 1/B) <strong>Gerelbat</strong></p>
-                <span>
-                    <i class="fa-solid fa-arrow-right fa-2x"></i>
-                </span>
-            </div>
-            <div class="divs"  onclick="location.href='koreanLanguage.html'">
-                <a href="">Korean Language<div>03-30</div><div>03-08</div></a>
-                <p>(CS 1/B) <strong>Shurenchimeg</strong></p>
-                <span>
-                    <i class="fa-solid fa-arrow-right fa-2x"></i>
-                </span>
-            </div>
-            <div class="divs"  onclick="location.href='mongolianWriting.html'">
-                <a href="">Mongolian writing <div>03-23</div><div>02-13</div></a>
-                <p>(CS 1/B) <strong>Gerelmaa</strong></p>
-                <span>
-                    <i class="fa-solid fa-arrow-right fa-2x"></i>
-                </span>
-            </div>
-            <div class="divs"  onclick="location.href='ProgrammingLanguageC.html'">
-                <a href="">Programming Language C (Beginner) <div>03-16</div><div>03-28</div></a>
-                <p>(CS 1/B) <strong>Youngmi</strong></p>
-                <span>
-                    <i class="fa-solid fa-arrow-right fa-2x"></i>
-                </span>
-            </div>
-            <div class="divs"  onclick="location.href='philosophy.html'">
-                <a href="">Philosophy <div>03-16</div><div>03-28</div></a>
-                <p>(CS 1/B) <strong>Ariunbolor</strong></p>
-                <span>
-                    <i class="fa-solid fa-arrow-right fa-2x"></i>
-                </span>
-            </div>
-            <div class="divs"  onclick="location.href='computerPractice.html'">
-                <a href="">Computer Practice II<div>03-16</div><div>03-28</div></a>
-                <p>(CS 1/B) <strong>Gerelbat</strong></p>
-                <span>
-                    <i class="fa-solid fa-arrow-right fa-2x"></i>
-                </span>
-            </div>
-        </div>
+    <section id="lecture-container">
+        <h2>Computer Practice II (CS 1/B) - Lecture</h2>
+        <div id="parent-lectureDivs">
+			<div class="lectureDivs">
+				<h5 class="1">Багш</h5>
+				<p>Ganbold</p>
+				<i class="fa-solid fa-user fa-2x"></i>
+			</div>
+			<div class="lectureDivs">
+				<h5 class="1">АНХААРУУЛГА</h5>
+				<p>0</p>
+				<i class="fa-solid fa-user fa-2x"></i>
+			</div>
+			<div class="lectureDivs">
+				<h5 class="1">ЛЕКЦ</h5>
+				<p>2</p>
+				<i class="fa-solid fa-user fa-2x"></i>
+			</div>
+			<div class="lectureDivs">
+				<h5 class="1">Гэрийн даалгавар</h5>
+				<p>1</p>
+				<i class="fa-solid fa-user fa-2x"></i>
+			</div>
+			<div class="lectureDivs">
+				<h5 class="1">АРХИВ</h5>
+				<p>0</p>
+				<i class="fa-solid fa-user fa-2x"></i>
+			</div>
+		</div>
+		<div class="lectureLink">
+			<ul>
+				<li><a href="#">Лекц 1, 2, 3 / 2023-03-16 14:22</a></li>
+			</ul>
+		</div>
+		<div class="lectureLink2">
+			<div>
+				<img src="/img/pttx.png" alt="">
+				<a href="#">programming.pptx</a>
+			</div>
+			<div>
+				<img src="/img/pttx.png" alt="" >
+				<a href="#">Lesson2.pptx</a>
+			</div>
+		</div>
+		<span id="comment">  
+			<input type="text" placeholder="Сэтгэгдэлээ энд нэмнэ үү">
+			<button>>></button>
+		</span>
     </section>
-    
 <script src="index.js"></script>
 </body>
 </html>
