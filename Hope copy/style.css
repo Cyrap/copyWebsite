@@ -181,6 +181,25 @@ body{
     color: rgb(205, 203, 203);
     box-shadow: 0 4px 8px 0 rgba(237, 233, 233, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
+.border-blue {
+    border-left: 0.25rem solid #4e73df!important;
+}
+.border-pink {
+    border-left: 0.25rem solid rgb(255, 0, 174)!important;
+}
+.border-green {
+    border-left: 0.25rem solid #0dff00!important;
+}
+.border-yellow {
+    border-left: 0.25rem solid #fbff00!important;
+}
+.border-orange {
+    border-left: 0.25rem solid #ff8c00!important;
+}
+.border-red {
+    border-left: 0.25rem solid #ff0000!important;
+}
+
 .divs:hover{
     background-color: rgb(29, 28, 28);
     color: var(--text-color);
