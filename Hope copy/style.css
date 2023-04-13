@@ -348,3 +348,8 @@ body{
     background: rgb(210, 213, 210);
     color: black;
 }
+/* homework div position fix */
+.homeworkDivs{
+    position: relative;
+    top: 25px;
+}
